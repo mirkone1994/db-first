@@ -7,7 +7,7 @@ foto - VARCHAR(100) - NULL
 anno - CHAR(4) - NOT_NULL
 stato - VARCHAR(20) - NOT_NULL
 immatricolazione - CHAR(4) - NOT_NULL
-proprietari TINYINT - NOT_NULL
+proprietari - TINYINT - NOT_NULL
 disponibilità BOOL - NOT_NULL
 quantità TINYINT - NOT_NULL DEFAULT(1)
 pagamento VARCHAR(20) - NOT_NULL
@@ -18,7 +18,7 @@ emissioni VARCHAR(10) - NULL
 cilindrata FLOAT(2,1) - NOT_NULL
 cilindri TINYINT - NULL
 cavalli SMALLINT - NOT_NULL
-kw/h FLOAT(3,2) - NOT_NULL
+kw_h - FLOAT(3,2) - NOT_NULL
 trazione - VARCHAR(10) NULL
 sospensioni - VARCHAR(10) - NULL
 freni - VARCHAR(10) - NULL
