@@ -1,25 +1,45 @@
-id 
-marchio
-modello
-anno
-stato
-immatricolazione
-disponibilità
-tipologia_motore
-tipologia_termico
-cilindrata
-cavalli
-kw/h
-marce
-km
-porte
-posti
-cerchioni
-pollici
-colore_vernice
-tipo_vernice
-climatizzatore
-adas
-infotainment
-cruise_control
-sensori
+NOME TABELLA : AUTOMOBILI
+
+id - INT - PRIMARY KEY (NOT_NULL, UNIQUE, AUTO_INCREMENT)
+marchio - VARCHAR(15) - NOT_NULL
+modello - VARCHAR(15) - NOT_NULL
+foto - VARCHAR(100) - NULL
+anno - CHAR(4) - NOT_NULL
+stato - VARCHAR(20) - NOT_NULL
+immatricolazione - CHAR(4) - NOT_NULL
+proprietari TINYINT - NOT_NULL
+disponibilità BOOL - NOT_NULL
+quantità TINYINT - NOT_NULL DEFAULT(1)
+pagamento VARCHAR(20) - NOT_NULL
+tipologia_motore VARCHAR(10) - NOT_NULL
+tipologia_termico VARCHAR(10) - NOT_NULL
+consumi VARCHAR(30) - NULL
+emissioni VARCHAR(10) - NULL
+cilindrata FLOAT(2,1) - NOT_NULL
+cilindri TINYINT - NULL
+cavalli SMALLINT - NOT_NULL
+kw/h FLOAT(3,2) - NOT_NULL
+trazione - VARCHAR(10) NULL
+sospensioni - VARCHAR(10) - NULL
+freni - VARCHAR(10) - NULL
+peso - SMALLINT - NULL
+cambio - VARCHAR(10) - NOT_NULL
+km - SMALLINT - NOT_NULL
+porte - TINYINT - NOT_NULL
+posti - TINYINT - NOT_NULL
+cerchioni - VARCHAR(20) - NULL
+pollici - TINYINT) - NULL
+colore_vernice - VARCHAR(20) - NOT_NULL
+tipo_vernice - VARCHAR(20) - NULL
+airbag - BOOL - NOT_NULL
+interni - VARCHAR(30) - NULL
+climatizzatore - VARCHAR(30) - NOT_NULL
+adas - VARCHAR(50) - NULL
+infotainment - VARCHAR(50) - NULL
+cruise_control - BOOL - NULL
+sensori - BOOL - NULL
+hill_holder - BOOL - NULL
+sedili_elettrici - BOOL - NULL
+start_stop - BOOL - NULL
+descrizione - TEXT - NOT_NULL
+recensione - TEXT - NOT_NULL
